@@ -16,7 +16,10 @@ function tries() {
 		guessedNumbers.push(userGuess);
 		numberOfGuesses += 1;
 
-		if (userGuess < answer) {
+		if (numberOfGuesses > 3) {
+			alert("You are out of tries!");
+		}
+		else if (userGuess < answer) {
 			messageOne.textContent = "Your guess is too low";
 			messageTwo.textContent = "No. of Guesses: " + numberOfGuesses;
 			messageThree.textContent = "Guessed Numbers Are: " + guessedNumbers;
