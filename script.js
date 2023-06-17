@@ -17,8 +17,9 @@ function tries() {
 
 	let userGuess = document.getElementById("guess").value; // Grabs value of number that is submitted
 
-	if (userGuess ==- null) { // Test case tif submit is clicked with nothing inside box
-		alert("PLease enter a number");
+	if (userGuess === null || userGuess === "") { // Test case tif submit is clicked or enter is pressed with nothing inside box
+		alert("Please enter a number");
+		return false;
 	}
 	else {
 		guessedNumbers.push(userGuess) // Will show input on screen for user to see what numbers have been entered
