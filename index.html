@@ -16,18 +16,20 @@
 <body>
 	<div class="container">
 		<h3>I'm Thinking of a Number Between 1-100</h3>
-		<h3>Can You Guess?</h3>
+		<h3>Can You Guess? You Have 3 Tries</h3>
 
-		<input type="text" placeholder="Number" id="guess">
+		<form id="my-form" onsubmit="tries()">
+			<!-- Input type as number removes ability to enter text -->
+			<input type="Number" min="1" max="100" placeholder="Number" id="guess"> 
+			
+			<br><br>
 
-		<br><br>
+			<input type="submit" value="Submit">
+			<input type="reset"  value="Reset" onclick="myButton()">
+		</form>
 
-		<button onclick="tries()" id="button">GUESS</button>
-
-		<p id="message-1">No. of Guesses: 0</p>
-		<p id="message-2">Guessed Numbers Are: None</p>
-		<p id="message-3"></p>
-
+		<p id="message"></p>
+		<p id="message-2"></p>
 	</div>
 
 	<script type="text/javascript"  defer src="script.js"></script>
