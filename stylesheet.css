@@ -28,8 +28,8 @@ h3 {
 	font-weight: 600;
 }
 
-input[type="text"] {
-	width: 90px;
+input[type="number"] {
+	width: 320px;
 	font-size: 16px;
 	font-weight: 600;
 	color: #616161;
@@ -39,7 +39,18 @@ input[type="text"] {
 	border: 2px solid #3c3c3c;
 }
 
-button {
+input[type= "submit"] {
+	width: 160px;
+	padding: 15px 0;
+	background-color: #616161;
+	color: #ffffff;
+	border: none;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+input[type= "reset"] {
 	width: 160px;
 	padding: 15px 0;
 	background-color: #616161;
