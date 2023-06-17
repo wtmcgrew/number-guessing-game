@@ -3,9 +3,9 @@ let messageTwo = document.getElementById("message-2");
 
 let answer = Math.floor(Math.random() * 100) + 1; 
 /*
-Math.random() Generates a number between 0 and 1 (not including 0)
-Multiples by 100 since we're looking for a number tween 1-100
-Math.floor() Rounds this answer down to the nearest whole number
+Math.random() Generates a number between 0 and 1 (not including 1)
+Multiplies by 100 since we're looking for a number between 1-100
+Math.floor() rounds this answer down to the nearest whole number
 Adding 1 gets a whole number between 1 and 100
 */
 
