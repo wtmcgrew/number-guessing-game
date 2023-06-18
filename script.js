@@ -36,9 +36,12 @@ function tries() {
 			message.textContent = "Your guess is too high";
 			messageTwo.textContent = "Guessed Numbers Are: " + guessedNumbers;
 		}
-		else if (userGuess === answer) {
+		else if (userGuess == answer) {
+			console.log(answer);
 			message.textContent = "That's correct!";
 			messageTwo.textContent = "The number was: " + answer;
+			answer = Math.floor(Math.random() * 100) + 1;
+			guessedNumbers = [];
 		}
 	}
 }
@@ -46,7 +49,6 @@ function tries() {
 function myButton () { // Resets form
 	document.getElementById("my-form").reset();
 	numberOfGuesses = 0;
-	guessedNumbers = [];
 	message.textContent = "";
 	messageTwo.textContent = "";
 }
