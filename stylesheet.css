@@ -50,7 +50,7 @@ input[type="submit"] {
 	margin-bottom: 30px;
 }
 
-input[type="reset"] {
+input[type="button"] {
 	width: 160px;
 	padding: 15px 0;
 	background-color: #616161;
