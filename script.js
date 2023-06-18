@@ -38,11 +38,15 @@ function tries() {
 		}
 		else if (userGuess === answer) {
 			message.textContent = "That's correct!";
-			alert("Click reset to play again!");
+			messageTwo.textContent = "The number was: " + answer;
 		}
 	}
 }
 
-function myButton () { // Resets form/page
-	location.reload();
+function myButton () { // Resets form
+	document.getElementById("my-form").reset();
+	numberOfGuesses = 0;
+	guessedNumbers = [];
+	message.textContent = "";
+	messageTwo.textContent = "";
 }
