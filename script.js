@@ -36,8 +36,7 @@ function tries() {
 			message.textContent = "Your guess is too high";
 			messageTwo.textContent = "Guessed Numbers Are: " + guessedNumbers;
 		}
-		else if (userGuess == answer) {
-			console.log(answer);
+		else if (userGuess = Number(userGuess) === answer) {
 			message.textContent = "That's correct!";
 			messageTwo.textContent = "The number was: " + answer;
 			answer = Math.floor(Math.random() * 100) + 1;
