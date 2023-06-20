@@ -17,9 +17,9 @@ function tries() {
 
 	let userGuess = Number(document.getElementById("guess").value); // Grabs value of number that is submitted; converts from string to number
 
-	if (userGuess === null || userGuess === "") { // Test case; if submit is clicked or enter is pressed with nothing inside box
+	if (userGuess === 0) { // Test case; if number field is emply it will alert user to enter a number
 		alert("Please enter a number");
-		return false;
+		return true;
 	}
 	else {
 		guessedNumbers.push(userGuess) // Will show input on screen for user to see what numbers have been entered
