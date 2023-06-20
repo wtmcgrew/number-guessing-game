@@ -15,8 +15,7 @@ let guessedNumbers = [];
 function tries() {
 	event.preventDefault(); // Prevents submit button from being actually submitted as a form
 
-	let userGuess = document.getElementById("guess").value; // Grabs value of number that is submitted
-	userGuess = Number(userGuess);
+	let userGuess = Number(document.getElementById("guess").value); // Grabs value of number that is submitted; converts from string to number
 
 	if (userGuess === null || userGuess === "") { // Test case; if submit is clicked or enter is pressed with nothing inside box
 		alert("Please enter a number");
