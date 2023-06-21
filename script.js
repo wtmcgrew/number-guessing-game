@@ -12,7 +12,7 @@ Adding 1 gets a whole number between 1 and 100
 let numberOfGuesses = 0;
 let guessedNumbers = [];
 
-function tries() {
+function guessingGame() {
 	event.preventDefault(); // Prevents submit button from being actually submitted as a form
 
 	let userGuess = Number(document.getElementById("guess").value); // Grabs value of number that is submitted; converts from string to number
@@ -45,7 +45,7 @@ function tries() {
 	}
 }
 
-function myButton () { // Resets form
+function resetButton () { // Resets form
 	document.getElementById("my-form").reset();
 	numberOfGuesses = 0;
 	message.textContent = "";
