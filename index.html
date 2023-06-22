@@ -18,14 +18,14 @@
 		<h3>I'm Thinking of a Number Between 1-100</h3>
 		<h3>Can You Guess? You Have 3 Tries</h3>
 
-		<form id="my-form" onsubmit="tries()">
+		<form id="my-form" onsubmit="guessingGame()">
 			<!-- Input type as number removes ability to enter text -->
 			<input type="number" min="1" max="100" placeholder="Number" id="guess"> 
 			
 			<br><br>
 
 			<input type="submit" value="Submit">
-			<input type="button"  value="Reset" onclick="myButton()">
+			<input type="button"  value="Reset" onclick="resetButton()">
 		</form>
 
 		<p id="message"></p>
