@@ -48,6 +48,7 @@ input[type="submit"] {
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 30px;
+	cursor: pointer;
 }
 
 input[type="button"] {
@@ -59,6 +60,7 @@ input[type="button"] {
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 30px;
+	cursor: pointer;
 }
 
 p {
