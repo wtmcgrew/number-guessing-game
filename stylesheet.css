@@ -46,6 +46,7 @@ input[type="submit"] {
 	color: #ffffff;
 	border: none;
 	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
 	font-weight: 600;
 	margin-bottom: 30px;
 	cursor: pointer;
@@ -58,6 +59,7 @@ input[type="button"] {
 	color: #ffffff;
 	border: none;
 	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
 	font-weight: 600;
 	margin-bottom: 30px;
 	cursor: pointer;
